@@ -20,12 +20,4 @@ public class RxSchdules {
             }
         };
     }
-    //线程切换封装的方法
-   /* public static <T> ObservableTransformer <ResponseBody, Object> io_main() {
-        return upstream ->  //Lambda箭头《===》实现类+实现方法
-                upstream.subscribeOn(Schedulers.io()). //注意是subscribeOn 而不是 observeOn
-                        observeOn(AndroidSchedulers.mainThread());
-    }
-
-    */
 }

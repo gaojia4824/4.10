@@ -48,4 +48,9 @@ public class MainPersenter extends BasePresenter {
     public void start(Object o) {
 
     }
+
+    @Override
+    public void detachView() {
+
+    }
 }

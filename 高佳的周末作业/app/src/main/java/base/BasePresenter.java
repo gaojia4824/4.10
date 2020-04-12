@@ -36,4 +36,6 @@ public abstract class BasePresenter<V extends IView>implements IPresenter {
         }
 
     }
+
+    public abstract void detachView();
 }

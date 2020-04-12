@@ -3,6 +3,7 @@ package mvp.module;
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 
 import java.security.SecureRandom;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import javax.net.ssl.HostnameVerifier;
@@ -13,7 +14,10 @@ import javax.net.ssl.TrustManager;
 
 import base.ApiService;
 import constents.Constants;
+import okhttp3.Call;
+import okhttp3.Callback;
 import okhttp3.OkHttpClient;
+import okhttp3.RequestBody;
 import retrofit2.Retrofit;
 import util.LoggingInterceptor;
 import util.MyCacheinterceptor;
@@ -75,6 +79,10 @@ public class OKManager {
         if (rf!=null){
             return rf.create(ApiService.class);
         }
+        return null;
+    }
+
+    public Call initRequest(String url, RequestBody requestBody, Map<String, String> headers, Callback callback) {
         return null;
     }
 }
